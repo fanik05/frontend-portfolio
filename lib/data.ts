@@ -10,14 +10,14 @@ export const profile = {
 
 export const about = [
   "I'm a frontend-focused software engineer building resilient, high-performance web applications — mostly in the React, Next.js, and TypeScript ecosystem. I've been developing professionally since 2022.",
-  "Before that I spent a few years in QA and test automation, which gave me a quality-first instinct I still carry into every UI: test the edges, measure performance, and ship something that holds up under real load. Since moving into development I've owned frontends end to end for B2B and FinTech products, and recently completed an MSc in Computational Science.",
+  "Before that I spent a few years in QA and test automation, which gave me a quality-first instinct I still carry into every UI: test the edges, measure performance, and ship something that holds up under real load. Since moving into development I've owned frontends end to end for B2B and FinTech products, and recently completed an MSc in Computational Science at Laurentian University in Ontario, Canada.",
 ];
 
 export const quickFacts = [
   { label: "Based in", value: "Dhaka, Bangladesh" },
   { label: "Developing since", value: "2022" },
   { label: "Core stack", value: "React · Next.js · TS" },
-  { label: "Education", value: "MSc Computational Science" },
+  { label: "Education", value: "MSc, Laurentian University" },
 ];
 
 export const socials = [
@@ -47,10 +47,10 @@ export interface ExperienceItem {
 export const experience: ExperienceItem[] = [
   {
     role: "Software Engineer",
-    org: "Remote · Contractual",
+    org: "Skilled",
     period: "2024 — 2025",
     track: "Development",
-    summary: "Sole frontend engineer for a global B2B professional-development platform and its marketing site.",
+    summary: "Sole frontend engineer (remote contract) for Skilled — a global B2B professional-development platform — and its high-conversion marketing site.",
     responsibilities: [
       "Architected and delivered the entire frontend ecosystem independently — design system, routing, and data layer — for the platform and its high-conversion marketing site.",
       "Built a Learning & Development dashboard in Next.js that let team leads monitor growth metrics and manage complex, deeply-nested data flows.",
