@@ -1,0 +1,19 @@
+services:
+  frontend-portfolio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: fatin-noor-anik-frontend-portfolio:latest
+    container_name: fna-frontend-portfolio
+    restart: unless-stopped
+    ports:
+      - "3001:3000"
+    environment:
+      - NODE_ENV=production
+      - NEXT_TELEMETRY_DISABLED=1
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost:3000"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
