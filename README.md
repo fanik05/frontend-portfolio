@@ -2,7 +2,7 @@
 
 A single-page personal portfolio for frontend / JavaScript roles, built in the modern dark developer-portfolio style.
 
-**Live:** deploys to Vercel as-is (`output: standalone`).
+**Live:** https://fatinnooranik.is-a.dev
 
 ## Design
 
