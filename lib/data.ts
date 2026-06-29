@@ -28,6 +28,7 @@ export const socials = [
 
 export const navLinks = [
   { label: "Experience", href: "#experience" },
+  { label: "Projects", href: "#projects" },
   { label: "About", href: "#about" },
   { label: "Stack", href: "#stack" },
   { label: "Contact", href: "#contact" },
@@ -111,6 +112,52 @@ export const experience: ExperienceItem[] = [
       "Validated complex financial workflows — fund transfers, account management — under strict security requirements.",
     ],
     tags: ["Appium", "Python"],
+  },
+];
+
+export interface Project {
+  name: string;
+  tagline: string;
+  summary: string;
+  highlights: string[];
+  tags: string[];
+  repo: string;
+  /** Screenshot under /public, e.g. "/projects/foo.png". */
+  image: string;
+  /** Live deployment, if one exists. */
+  demo?: string;
+}
+
+export const projects: Project[] = [
+  {
+    name: "Neighborly",
+    tagline: "Hyperlocal community marketplace",
+    summary:
+      "A platform where neighbors buy, sell, or loan tools and goods nearby — built as an end-to-end TypeScript PERN monorepo with geospatial search and real-time chat.",
+    highlights: [
+      "Geospatial “items near me” search backed by PostgreSQL + PostGIS, mapped with Leaflet and OpenStreetMap.",
+      "Real-time neighbor-to-neighbor messaging over Socket.io, plus a loan-request workflow.",
+      "npm-workspaces monorepo with a shared API-contract types package the client and server both import.",
+      "JWT auth and Cloudinary image uploads for listing photos.",
+    ],
+    tags: ["Next.js", "React 19", "Express 5", "PostGIS", "Drizzle", "Socket.io", "TypeScript"],
+    repo: "https://github.com/fanik05/neighborly",
+    image: "/projects/neighborly.png",
+  },
+  {
+    name: "Dota 2 Draft Coach",
+    tagline: "Hybrid Go + Python counter-pick engine",
+    summary:
+      "A draft assistant that calculates optimal hero counters from real-time OpenDota matchup data, served through a Go REST API to a React frontend.",
+    highlights: [
+      "Go scoring engine and REST API that ranks counter picks against an enemy lineup.",
+      "Python ETL pipeline harvests and statistically normalizes matchup data from the OpenDota API.",
+      "React + TypeScript (Vite) frontend with a themed Cinzel / Rajdhani type system.",
+      "Shared scoring core exposed through both a CLI and an HTTP /suggest endpoint.",
+    ],
+    tags: ["Go", "Python", "React", "TypeScript", "Vite", "REST API"],
+    repo: "https://github.com/fanik05/dota-draft-coach",
+    image: "/projects/dota-draft-coach.png",
   },
 ];
 

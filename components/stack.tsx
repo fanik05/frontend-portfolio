@@ -9,7 +9,7 @@ export function Stack() {
     <section id="stack" className="scroll-mt-24 py-24 sm:py-28">
       <div className="container">
         <SectionHeading
-          index="03"
+          index="04"
           eyebrow="Toolkit"
           title="Technologies I work with."
           description="Deep in the React / TypeScript ecosystem, comfortable across the full delivery pipeline — from component architecture to Dockerized deploys."
