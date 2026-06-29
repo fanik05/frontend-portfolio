@@ -8,7 +8,7 @@ export function About() {
   return (
     <section id="about" className="scroll-mt-24 py-24 sm:py-28">
       <div className="container">
-        <SectionHeading index="02" eyebrow="About" title="A bit about me." />
+        <SectionHeading index="03" eyebrow="About" title="A bit about me." />
 
         <div className="grid gap-10 lg:grid-cols-[1.55fr_1fr] lg:gap-14">
           {/* Bio */}
